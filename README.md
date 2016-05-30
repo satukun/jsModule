@@ -1,2 +1,3 @@
-# js-module
-今まで作ってきたモジュールをここに追加
+# component
+##posttime.js
+投稿日から今日まで投稿時間差
