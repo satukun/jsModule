@@ -1,11 +1,12 @@
 # component
 ## 共通モジュール
-**必ず**下記２行は先に読ませてください
+**必ず**下記２行は先に読ませてください:bowtie:
 ```
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 ```
 ###posttime.js
+*****
 投稿日から今日まで投稿時間差
 ```
 	<script src="js/app/postTime.js"></script>
@@ -17,6 +18,7 @@
 ```
 
 ###circleFall.js
+*****
 背景で丸が移動
 
 ```
@@ -35,6 +37,7 @@
 ```
 
 ###boxMove.js
+*****
 箱が領域外が出現
 
 ```
@@ -53,6 +56,7 @@
 ```
 
 ###targetPost.js
+*****
 射的ゲームっぽい
 
 ```
