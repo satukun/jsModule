@@ -4,7 +4,6 @@
 ```
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-
 ```
 ###posttime.js
 投稿日から今日まで投稿時間差
