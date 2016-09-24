@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>射的</title>
+    <link rel="shortcut icon" href="http://stat100.ameba.jp/common_style/img/favicon.ico">
+    <link rel="stylesheet" media="screen,print" href="http://stat100.ameba.jp/mypg/cache/css/ameba/hf/common.hf.white.css">
+    <link rel="stylesheet" media="screen,print" href="http://stat100.ameba.jp/mypg/css/common.css">
+    <link rel="stylesheet" media="screen,print" href="style.css">
+  </head>
+  <body>
+    <!--main contents-->
+    <div class="sb-wrapper">
+      <div class="sb-contents">
+        <!-- <div class="u-panel"></div> -->
+        <!--header contents-->
+        <section class="sb-main">
+          <div class="sb-header__inner">
+          </div>
+          <!--contents-->
+          <section class="sb-topic">
+            <div class="sb-topic__list u-Bg--Posting">
+              <h2 class="m-heading__title">射的ゲーム</h2>
+              <!-- <span class="sb-header__times"></span> -->
+              <span class="sb-header__point">0</span>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--/main contents-->
+    <!-- sns -->
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app/targetPost.js"></script>
+    <script>
+    $(function(){
+      CA.targetPost({
+        /*レーン数 1~10*/
+        lane:1,
+        /*的スピードレベル 1~5*/
+        speed:3000,
+        /*的数 1~10*/
+        target:50
+      });
+    });
+    </script>
+  </body>
+</html>
