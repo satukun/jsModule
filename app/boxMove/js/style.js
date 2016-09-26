@@ -24,10 +24,10 @@ boxMove.prototype.template   = function(){
   var self   = this;
   var boxMax = 0;
   var diff   = 0;
-  
+
   var cont = function(){
     var color = '#' + ("00000"+Math.floor(Math.random() * 0x1000000).toString(16)).substr(-6);
-    var box   = Math.floor(Math.random() * 20) + 1;
+    var box   = Math.floor(Math.random() * 2) + 1;
 
     diff      = boxMax;
     boxMax    = boxMax + box;

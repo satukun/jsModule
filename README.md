@@ -3,7 +3,7 @@
 **必ず**下記２行は先に読ませてください:bowtie:
 ```
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="../commonJS/main.js"></script>
+	<script src="../../js/main.js"></script>
 ```
 ###posttime.js
 *****
