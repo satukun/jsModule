@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="http://stat100.ameba.jp/common_style/img/favicon.ico">
     <link rel="stylesheet" media="screen,print" href="http://stat100.ameba.jp/mypg/cache/css/ameba/hf/common.hf.white.css">
     <link rel="stylesheet" media="screen,print" href="http://stat100.ameba.jp/mypg/css/common.css">
-    <link rel="stylesheet" media="screen,print" href="style.css">
+    <link rel="stylesheet" media="screen,print" href="css/style.css">
   </head>
   <body>
     <!--main contents-->
@@ -33,17 +33,17 @@
     <!-- sns -->
     <!--js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/app/targetPost.js"></script>
+    <script src="../commonJS/main.js" async></script>
+    <script src="js/style.js" async></script>
     <script>
     $(function(){
       CA.targetPost({
         /*レーン数 1~10*/
-        lane:1,
+        lane:3,
         /*的スピードレベル 1~5*/
         speed:3000,
         /*的数 1~10*/
-        target:50
+        target:10
       });
     });
     </script>

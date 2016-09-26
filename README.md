@@ -3,13 +3,13 @@
 **必ず**下記２行は先に読ませてください:bowtie:
 ```
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../commonJS/main.js"></script>
 ```
 ###posttime.js
 *****
 投稿日から今日まで投稿時間差
 ```
-	<script src="js/app/postTime.js"></script>
+	<script src="js/postTime.js"></script>
 	<script>
 	$(function(){
 		CA.postTime();
@@ -22,7 +22,7 @@
 背景で丸が移動
 
 ```
-	<script src="js/app/circleFall.js"></script>
+	<script src="js/circleFall.js"></script>
 	<script>
 	$(function(){
 		CA.circleFall({
@@ -41,7 +41,7 @@
 箱が領域外が出現
 
 ```
-	<script src="js/app/boxMove.js"></script>
+	<script src="js/boxMove.js"></script>
 	<script>
 	$(function(){
 		CA.boxMove({
@@ -60,7 +60,7 @@
 射的ゲームっぽい
 
 ```
-	<script src="js/app/boxMove.js"></script>
+	<script src="js/boxMove.js"></script>
 	<script>
     $(function(){
 		CA.targetPost({
