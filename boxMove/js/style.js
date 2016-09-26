@@ -6,11 +6,8 @@ function boxMove(opt) {
     this.direction = opt.direction;
     this.cnt = [];
     this.boxbox;
-
     $list = $(".boxMove__list");
-
-    this.text = "ハゲ丸くん";
-
+    $line = $("<div>", {class:"line"})
     this.init();
 }
 
@@ -24,24 +21,29 @@ boxMove.prototype.init       = function() {
 /*ボックリスト作成
 *******************************/
 boxMove.prototype.template   = function(){
-  var self = this;
+  var self   = this;
   var boxMax = 0;
-
-
-  while(100 >= boxMax){
+  var diff   = 0;
+  
+  var cont = function(){
     var color = '#' + ("00000"+Math.floor(Math.random() * 0x1000000).toString(16)).substr(-6);
-    var box = Math.floor(Math.random() * 60) + 1;
-    boxMax = boxMax + box;
+    var box   = Math.floor(Math.random() * 20) + 1;
+
+    diff      = boxMax;
+    boxMax    = boxMax + box;
     if(boxMax > 100){
-      console.log(boxMax);
-      diff = (boxMax - 100)
-      console.log("over↓");
-      console.log(diff);
+      diff = (100 - diff);
       start(color,diff);
+      boxMax = 0;
+      diff = 0;
+      $BODY.append($line);
     }else{
       start(color,box);
     }
+
+    setTimeout(cont,1000);
   }
+  setTimeout(cont,0);
 
   function start(color,box){
     $list = $("<dl/>",{class:"boxMove__list"}).css({
@@ -55,7 +57,7 @@ boxMove.prototype.template   = function(){
 /*レンダリング
 *******************************/
 boxMove.prototype.render     = function(ele){
-  $BODY.append(ele);
+  $BODY.append($line.append(ele));
   this.appearance(ele);
 };
 
