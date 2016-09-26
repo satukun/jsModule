@@ -7,7 +7,7 @@ function boxMove(opt) {
     this.cnt = [];
     this.boxbox;
     $list = $(".boxMove__list");
-    $line = $("<div>", {class:"line"})
+    $line = $("<div>", {class:"line"});
     this.init();
 }
 
@@ -15,6 +15,7 @@ function boxMove(opt) {
 /*初期設定
 *******************************/
 boxMove.prototype.init       = function() {
+  var flag;
   this.template();
 };
 
@@ -27,7 +28,7 @@ boxMove.prototype.template   = function(){
 
   var cont = function(){
     var color = '#' + ("00000"+Math.floor(Math.random() * 0x1000000).toString(16)).substr(-6);
-    var box   = Math.floor(Math.random() * 2) + 1;
+    var box   = Math.floor(Math.random() * 20) + 1;
 
     diff      = boxMax;
     boxMax    = boxMax + box;
@@ -36,13 +37,14 @@ boxMove.prototype.template   = function(){
       start(color,diff);
       boxMax = 0;
       diff = 0;
-      $BODY.append($line);
+      $BODY.append($line,{flag:false});
     }else{
       start(color,box);
     }
 
     setTimeout(cont,1000);
   }
+  self.render($line,{flag:false});
   setTimeout(cont,0);
 
   function start(color,box){
@@ -50,22 +52,27 @@ boxMove.prototype.template   = function(){
       "background-color":color,
       "width":box + "%"
     });
-    self.render($list);
+    self.render($list,{flag:true});
   }
 };
 
 /*レンダリング
 *******************************/
-boxMove.prototype.render     = function(ele){
-  $BODY.append($line.append(ele));
-  this.appearance(ele);
+boxMove.prototype.render     = function(ele,arg){
+  if(!arg.flag){
+    $BODY.append($line);
+    flag = true;
+  }else{
+    $line.append(ele);
+    this.appearance(ele);
+  }
 };
 
 /*移動
 *******************************/
 boxMove.prototype.appearance = function(ele){
   ele.animate({
-    opacity:1
+    opacity:0.4
   });
 };
 
