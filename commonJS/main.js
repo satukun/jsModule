@@ -27,5 +27,8 @@ CA = {
     },
     userAgent:function(root){
         decision(root);
+    },
+    slotMacine:function(){
+        start();
     }
 }

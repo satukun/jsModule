@@ -1,4 +1,3 @@
-$(function() {
     var CA;
     var CP_DIR              = 'muchakoslot' + '/'; //毎回のcontentのurl
     var BACK_TO_CP_TEXT     = '回して！答えて！お題スロット'; //エディタに貼付されるCPに戻るテキスト
@@ -25,13 +24,13 @@ $(function() {
     var defense             = false;
     var slotCnt             = [];
     var boxbox;
-    function Slot(word, spec) {
+    function slotMacine(word, spec) {
         var self = this
         this.word = word;
         this.speed = spec;
         self._init();
     }
-    Slot.prototype = {
+    slotMacine.prototype = {
         /************************************************
         //init
         ************************************************/
@@ -237,7 +236,7 @@ $(function() {
         CA = "";
         $(".u-roulette").html("");
         $.each($TEXT_BOX, function(val, array) {
-            CA = new Slot(array, {
+            CA = new slotMacine(array, {
                 "delay": DELAY * (val + 1),
                 "accele": ACCELE,
                 "decele": DECELE,
@@ -248,9 +247,6 @@ $(function() {
                 $(".u-slotbtn__Active").css("display", "none");
             }
         });
-        if (SP) {
-            CA._scroll();
-        }
     }
     //controller
     /*****************/
@@ -270,5 +266,3 @@ $(function() {
                 break;
         }
     });
-    start();
-});
