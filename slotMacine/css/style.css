@@ -1,0 +1,359 @@
+@charset "UTF-8";
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  background: 0 0; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+  vertical-align: top; }
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro','�ｭ�ｳ �ｰ繧ｴ繧ｷ繝�け',Arial,Helvetica,sans-serif;
+  line-height: 1;
+  overflow: auto; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+#globalHeader {
+  margin-bottom: 0; }
+
+a:hover {
+  opacity: .7; }
+
+.link-org {
+  text-decoration: underline;
+  color: #ff6029; }
+  .link-org:visited {
+    color: #ff6029; }
+
+.sb-wrapper {
+  line-height: 1.4;
+  min-width: 1200px;
+  color: #000;
+  background: url("../img/mucha__Bg.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.sb-main {
+  text-align: center; }
+
+.sb-header__inner {
+  background-image: url("../img/Question__muchako--b.png");
+  background-repeat: no-repeat;
+  background-position: right 32px bottom 0;
+  padding: 32px 0;
+  margin: 0 auto;
+  width: 980px; }
+
+.sb-topic {
+  padding-bottom: 16px; }
+  .sb-topic:last-child {
+    padding-bottom: 48px; }
+  .sb-topic__list {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding: 30px 0 48px 0; }
+
+.sb-summary {
+  position: relative;
+  padding-top: 50px;
+  color: #666; }
+  .sb-summary__title {
+    font-size: 32px;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #ccc; }
+  .sb-summary__lead {
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px 40px 16px; }
+    .sb-summary__lead dl {
+      margin-bottom: 40px; }
+    .sb-summary__lead dt {
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      padding: 0 0 15px 22px;
+      color: #333; }
+      .sb-summary__lead dt:before {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        display: block;
+        width: 15px;
+        height: 15px;
+        content: '';
+        background: #f54174; }
+    .sb-summary__lead dd {
+      padding-left: 1em;
+      text-indent: -1em; }
+
+.snsShare {
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #ddd; }
+  .snsShare ul {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-right: 25px;
+    text-align: right; }
+
+.ex-linkBtn li {
+  display: inline; }
+  .ex-linkBtn li:first-child {
+    margin-right: 6px; }
+
+.ex-linkBtn__btn {
+  font: 11px/18px 'Helvetica Neue',Arial,sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  border-radius: 3px;
+  outline: none; }
+
+.tweetBtn {
+  letter-spacing: -1px;
+  background-color: #48aadc; }
+  .tweetBtn:active, .tweetBtn:focus, .tweetBtn:hover {
+    background-color: #0c7abf; }
+  .tweetBtn:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1); }
+  .tweetBtn i {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(http://stat100.ameba.jp/ameblo/pc/img/sns/btn_share_twitter_ico.png) 0 0 no-repeat; }
+  .tweetBtn span {
+    display: inline-block;
+    zoom: 1;
+    padding: 0 9px 0 27px;
+    vertical-align: middle;
+    color: #fff;
+    *display: inline; }
+
+.fbShareBtn {
+  background-color: #405a94; }
+  .fbShareBtn:active, .fbShareBtn:focus, .fbShareBtn:hover {
+    border-color: #5874c3 #4961a8 #41599f;
+    background-color: #5b7bd5;
+    background-color: linear-gradient(#5b7bd5, #4864b1);
+    -webkit-box-shadow: inset 0 0 1px #607fd6;
+    box-shadow: inset 0 0 1px #607fd6; }
+  .fbShareBtn i {
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    width: 7px;
+    height: 12px;
+    background: url(http://stat100.ameba.jp/ameblo/pc/img/sns/btn_share_fb_ico.png) 0 0 no-repeat; }
+  .fbShareBtn span {
+    display: inline-block;
+    zoom: 1;
+    padding: 0 9px 0 22px;
+    vertical-align: middle;
+    color: #fff;
+    *display: inline; }
+
+.m-heading__title {
+  margin-bottom: 32px; }
+
+.m-note {
+  display: inline-block; }
+  .m-note li {
+    text-align: left; }
+
+.u-Bg {
+  border-style: solid;
+  border: 2px solid black;
+  border-radius: 10px; }
+  .u-Bg--Question {
+    background-color: rgba(0, 206, 185, 0.95);
+    background-image: url("../img/Question__muchako--a.png"), url("../img/Question__muchako--b.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 22px bottom 0, right 22px bottom 0; }
+  .u-Bg--Slot {
+    background: rgba(246, 242, 66, 0.95); }
+  .u-Bg--Posting {
+    background: rgba(20, 188, 235, 0.95); }
+  .u-Bg--Overview {
+    background: #f7f6f2; }
+
+.u-roulette {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0px auto; }
+
+.u-rouletteBox {
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 220px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin-bottom: 15px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* border-radius */
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+  .u-rouletteBox::after {
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    /* box-shadow */
+    box-shadow: inset 0px -90px 0px 0px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: inset 0px -90px 0px 0px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: inset 0px -90px 0px 0px rgba(0, 0, 0, 0.04); }
+  .u-rouletteBox__list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    /* 縦方向中央揃え（Safari用） */
+    align-items: center;
+    /* 縦方向中央揃え */
+    -webkit-justify-content: center;
+    /* 横方向中央揃え（Safari用） */
+    justify-content: center;
+    /* 横方向中央揃え */
+    height: 250px;
+    width: 100%;
+    font-size: 23px;
+    background: #fff; }
+
+.u-rouletteButton {
+  text-align: center;
+  display: block;
+  width: 100%; }
+  .u-rouletteButton a {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 69px;
+    box-sizing: border-box;
+    z-index: 10;
+    top: 2px;
+    margin: 0 auto; }
+    .u-rouletteButton a:hover {
+      top: 4px; }
+    .u-rouletteButton a::after {
+      position: absolute;
+      content: "";
+      display: block;
+      z-index: 1;
+      width: 280px;
+      height: 120px;
+      border: 2px solid black;
+      border-radius: 69px;
+      box-sizing: border-box;
+      top: -12px;
+      left: -2px; }
+  .u-rouletteButton li {
+    vertical-align: top;
+    letter-spacing: normal;
+    width: 298px; }
+
+.u-slotbtn__Def {
+  display: inline-block; }
+  .u-slotbtn__Def a {
+    background-color: #535353; }
+    .u-slotbtn__Def a:hover {
+      top: 2px;
+      opacity: 1;
+      cursor: default; }
+    .u-slotbtn__Def a::after {
+      background: #777777 url("../img/u-slotbtn__Def.png") no-repeat center center; }
+.u-slotbtn__Active {
+  display: none; }
+  .u-slotbtn__Active a {
+    background-color: #b24227; }
+    .u-slotbtn__Active a::after {
+      background: #ff5e38 url("../img/u-slotbtn__Active.png") no-repeat center center; }
+.u-slotbtn__Retry {
+  display: none; }
+  .u-slotbtn__Retry a {
+    background-color: #00835c; }
+    .u-slotbtn__Retry a::after {
+      background: #00bb84 url("../img/u-slotbtn__Retry.png") no-repeat center center; }
+.u-slotbtn__Start {
+  display: inline-block; }
+  .u-slotbtn__Start a {
+    background-color: #00835c; }
+    .u-slotbtn__Start a::after {
+      background: #00bb84 url("../img/u-slotbtn__Start.png") no-repeat center center; }
+
+.u-slot__machine {
+  position: relative;
+  width: 901px;
+  margin: 0 auto;
+  background: url("../img/Slot__Machine.png") no-repeat; }
+
+.u-mb35 {
+  margin-bottom: 35px; }
+.u-mb40 {
+  margin-bottom: 40px; }
+
+.u-dn {
+  display: none; }
+
+.u-dib {
+  display: inline-block; }
+
+#ambFooter {
+  min-width: 1200px; }
+
+#ambFooterInner {
+  width: 100%; }
+
+#ambFooterRight {
+  padding-right: 20px; }

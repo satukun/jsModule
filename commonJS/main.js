@@ -24,6 +24,11 @@ CA = {
     },
     postTime:function(){
         postTime();
+    },
+    userAgent:function(root){
+        decision(root);
+    },
+    slotMacine:function(){
+        start();
     }
-
 }
